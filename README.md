@@ -7,3 +7,4 @@ Der Front-End-Code der Website ist Open Source, willkommen, um bei der Optimieru
 * [Frontend-Code](https://github.com/xxai-art/web)
 * [Sprachpakete für die Website als Ganzes](https://github.com/xxai-art/web/tree/main/i18n)
 * [Sprachpakete für Login-Module](https://github.com/wacpkg/user/tree/main/ui.i18n)
+* [Website Mehrsprachige Dokumentation](https://github.com/xxai-doc)
