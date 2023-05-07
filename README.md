@@ -2,7 +2,7 @@
 
 * [Website Mehrsprachige Dokumentation](https://github.com/xxai-doc)
 
-Der Front-End-Code der Website ist Open Source, willkommen, um bei der Optimierung der Übersetzung zu helfen
+Der Frontend-Code der Website ist Open Source. Helfen Sie mit, die Übersetzung zu optimieren
 
 * [Frontend-Code](https://github.com/xxai-art/web)
 * [Sprachpakete für die Website als Ganzes](https://github.com/xxai-art/web/tree/main/i18n)
