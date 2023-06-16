@@ -17,14 +17,14 @@ Die Front-End-Programmiersprache ist [@w5/coffee_plus](http://npmjs.com/@w5/coff
 
 Bauen Sie auf den folgenden 3 Projekten auf
 
-### [@w5/mdt](https://www.npmjs.com/package/@w5/mdt)
+* [@w5/mdt](https://www.npmjs.com/package/@w5/mdt)
 
-Die Markdown-Vorlage mit dem Suffix `.mdt` kann auf externe Dateien mit einer Syntax ähnlich wie `<+ ./coffee_plus/import.js>` verweisen.
+  Das Suffix ist `.mdt` . Sie können die Syntax ähnlich wie `<+ ./coffee_plus/import.js>` verwenden, um auf externe Dateien zu verweisen und Markdown mit dem Suffix `.md` zu generieren.
 
-[@w5/trmd](https://www.npmjs.com/package/@w5/trmd)
+* [@w5/trmd](https://www.npmjs.com/package/@w5/trmd)
 
-Die Markdown-Übersetzung übersetzt keine Codes und Links und speichert übersetzte Sätze zwischen. Wenn die Übersetzung geändert wird, der Originaltext jedoch nicht, wird die Änderung der Übersetzung durch eine erneute Ausführung nicht überschrieben.
+  Die Markdown-Übersetzung übersetzt keine Codes und Links und speichert übersetzte Sätze zwischen. Wenn die Übersetzung geändert wird, der Originaltext jedoch nicht, wird die Änderung der Übersetzung durch eine erneute Ausführung nicht überschrieben.
 
-[@w5/i18n](https://www.npmjs.com/package/@w5/i18n)
+* [@w5/i18n](https://www.npmjs.com/package/@w5/i18n)
 
-Sprachdateien zum Übersetzen `yaml` generierten Websites.
+  Sprachdateien zum Übersetzen `yaml` generierten Websites.
