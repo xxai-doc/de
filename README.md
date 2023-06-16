@@ -2,9 +2,29 @@
 
 # xxAI.art
 
-Der Front-End-Code der Website ist Open Source, willkommen, um bei der Optimierung der Übersetzung zu helfen
+Ein Teil des Website-Codes ist Open Source und kann gerne zur Optimierung der Übersetzung beitragen.
 
-* [Frontend-Code](https://github.com/xxai-art/web)
+## Front-End-Code
+
+* [Front-End-Code](https://github.com/xxai-art/web)
 * [Sprachpakete für die Website als Ganzes](https://github.com/xxai-art/web/tree/main/i18n)
-* [Sprachpakete für Login-Module](https://github.com/wacpkg/user/tree/main/ui.i18n)
-* [Website Mehrsprachige Dokumentation](https://github.com/xxai-doc)
+* [Sprachpakete für Anmeldemodule](https://github.com/wacpkg/user/tree/main/ui.i18n)
+* [Mehrsprachige Website-Dokumentation](https://github.com/xxai-doc)
+
+Die Front-End-Programmiersprache ist [@w5/coffee_plus](http://npmjs.com/@w5/coffee_plus) , die einige Funktionen basierend auf der Coffeescript-Syntax hinzufügt, siehe [./coffee_plus.md](./coffee_plus.md) .
+
+## Internationalisierung von Websites und Dokumenten
+
+Bauen Sie auf den folgenden 3 Projekten auf
+
+### [@w5/mdt](https://www.npmjs.com/package/@w5/mdt)
+
+Die Markdown-Vorlage mit dem Suffix `.mdt` kann auf externe Dateien mit einer Syntax ähnlich wie `<+ ./coffee_plus/import.js>` verweisen.
+
+[@w5/trmd](https://www.npmjs.com/package/@w5/trmd)
+
+Die Markdown-Übersetzung übersetzt keine Codes und Links und speichert übersetzte Sätze zwischen. Wenn die Übersetzung geändert wird, der Originaltext jedoch nicht, wird die Änderung der Übersetzung durch eine erneute Ausführung nicht überschrieben.
+
+[@w5/i18n](https://www.npmjs.com/package/@w5/i18n)
+
+Sprachdateien zum Übersetzen `yaml` generierten Websites.
