@@ -1,10 +1,10 @@
 <p align="center"><a href="https://xxai.art"><img src="https://cdn.jsdelivr.net/gh/xxai-art/doc/logo.svg"/></a><br/><a href="https://xxai.art"><img src="https://cdn.jsdelivr.net/gh/xxai-art/doc/xxai.svg"/></a></p><p align="center"><a href="https://github.com/xxai-art/doc#readme"><img alt="I18N" src="https://cdn.jsdelivr.net/gh/wactax/img/t.svg"/></a>　<a href="https://groups.google.com/u/0/g/xxai-art"><img alt="Google Groups" src="https://cdn.jsdelivr.net/gh/wactax/img/g-groups.svg"/></a></p>
 
-# xxAI.art
+Es wird empfohlen, zuerst nodejs, [direnv](https://direnv.net) , [bun](https://github.com/oven-sh/bun) und dann `direnv allow` nach Eingabe des Verzeichnisses zu installieren ( [die .envrc](https://github.com/xxai-art/doc/blob/main/.envrc) wird nach Eingabe des Verzeichnisses automatisch ausgeführt).
 
-Ein Teil des Website-Codes ist Open Source und kann gerne zur Optimierung der Übersetzung beitragen.
+Die Bedeutung ist: Chinesische Übersetzung ins Japanische, Koreanische, Englische, Englische Übersetzung in alle anderen Sprachen. Wenn Sie nur Chinesisch und Englisch unterstützen möchten, können Sie einfach `zh: en` schreiben.
 
-## Front-End-Code
+Die Bedeutung ist: Chinesische Übersetzung ins Japanische, Koreanische, Englische, Englische Übersetzung in alle anderen Sprachen. Wenn Sie nur Chinesisch und Englisch unterstützen möchten, können Sie einfach `zh: en` schreiben.
 
 * [Front-End-Code](https://github.com/xxai-art/web)
 * [Sprachpakete für die Website als Ganzes](https://github.com/xxai-art/web/tree/main/i18n)
@@ -31,15 +31,15 @@ Bauen Sie auf den folgenden 3 Projekten auf
 
 ### Anweisungen zur Automatisierung der Dokumentübersetzung
 
-Siehe Repository [xxai-art/doc](https://github.com/xxai-art/doc)
+Siehe Code-Repository [xxai-art/doc](https://github.com/xxai-art/doc)
 
-Es wird empfohlen, zuerst NodeJS, [Direnv](https://direnv.net) und [Bun](https://github.com/oven-sh/bun) zu installieren und dann nach Eingabe des Verzeichnisses `direnv allow` auszuführen.
+Es wird empfohlen, zuerst nodejs, [direnv](https://direnv.net) , [bun](https://github.com/oven-sh/bun) und dann `direnv allow` nach Eingabe des Verzeichnisses zu installieren ( [die .envrc](https://github.com/xxai-art/doc/blob/main/.envrc) wird nach Eingabe des Verzeichnisses automatisch ausgeführt).
 
-Um zu vermeiden, dass zu große Warehouses in Hunderte von Sprachen übersetzt werden, habe ich für jede Sprache ein separates Code-Warehouse erstellt und eine Organisation zum Speichern dieses Warehouse erstellt
+Um die große Codebasis zu vermeiden, die in Hunderte von Sprachen übersetzt wurde, habe ich für jede Sprache eine separate Codebasis erstellt und eine Organisation zum Speichern der Codebasis erstellt
 
-Durch Festlegen der Umgebungsvariablen `GITHUB_ACCESS_TOKEN` und anschließendes Ausführen von [create.github.coffee](https://github.com/xxai-art/doc/blob/main/create.github.coffee) wird das Warehouse automatisch erstellt.
+Durch Festlegen der Umgebungsvariablen `GITHUB_ACCESS_TOKEN` und anschließendes Ausführen von [create.github.coffee](https://github.com/xxai-art/doc/blob/main/create.github.coffee) wird das Code-Repository automatisch erstellt.
 
-Natürlich können Sie es auch in einem Lagerhaus unterbringen.
+Natürlich können Sie es auch in eine Codebasis einfügen.
 
 Übersetzungsskriptreferenz [run.sh](https://github.com/xxai-art/doc/blob/main/run.sh)
 
@@ -71,4 +71,8 @@ Für die kostenlose Übersetzung wird die Google API verwendet. Wenn Sie nicht a
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 ```
 
-Das Übersetzungsskript generiert einen Übersetzungscache im `.i18n` Verzeichnis. Bitte überprüfen Sie ihn mit `git status` und fügen Sie ihn dem Code-Repository hinzu, um wiederholte Übersetzungen zu vermeiden.
+Das Übersetzungsskript generiert einen übersetzten Cache im `.i18n` Verzeichnis. Bitte überprüfen Sie ihn mit `git status` und fügen Sie ihn dem Code-Repository hinzu, um wiederholte Übersetzungen zu vermeiden.
+
+Bitte führen Sie `bunx i18n` jedes Mal aus, wenn Sie die Übersetzung ändern, um den Cache zu aktualisieren.
+
+Wenn der Originaltext und die Übersetzung gleichzeitig geändert werden, wird der Cache verwirrt. Wenn Sie also Änderungen vornehmen möchten, können Sie nur einen ändern und dann `bunx i18n` ausführen, um den Cache zu aktualisieren.
